@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्री हनुमान मंदिर निर्माण अभियान</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>🚩 श्री हनुमान मंदिर निर्माण अभियान 🚩</h1>
+    <p>आपके सहयोग से भव्य मंदिर निर्माण</p>
+</header>
+
+<section class="main-content">
+    <h2>🙏 मंदिर निर्माण हेतु सहयोग करें</h2>
+    <p class="description">
+        यदि 50,000 श्रद्धालु ₹100 का सहयोग करें,
+        तो भव्य श्री हनुमान मंदिर का निर्माण संभव है।
+    </p>
+
+    <div class="target-section">
+        <h3>🎯 लक्ष्य राशि: ₹50,00,000</h3>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+            </div>
+            <p id="progressText">💰 प्राप्त दान: ₹<span id="collectedAmount">0</span></p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://via.placeholder.com/300x300?text=हनुमान+जी" alt="हनुमान जी" class="hanuman-image">
+    </div>
+
+    <div class="donation-buttons">
+        <button class="quick-donate" onclick="donateAmount(100)">₹100 दान करें</button>
+        <button class="quick-donate" onclick="donateAmount(500)">₹500 दान करें</button>
+        <button class="quick-donate" onclick="donateAmount(1000)">₹1000 दान करें</button>
+        <button class="quick-donate" onclick="donateAmount(5000)">₹5000 दान करें</button>
+    </div>
+
+    <div class="custom-donation">
+        <input type="number" id="customAmount" placeholder="कस्टम राशि दर्ज करें (₹)" min="1">
+        <button class="donate-btn" onclick="donateCustom()">दान करें</button>
+    </div>
+</section>
+
+<section class="progress-section">
+    <h2>📊 मंदिर निर्माण प्रगति</h2>
+    <div class="stats-container">
+        <div class="stat-box">
+            <h3 id="totalDonors">0</h3>
+            <p>कुल दाताएं</p>
+        </div>
+        <div class="stat-box">
+            <h3 id="totalDonations">0</h3>
+            <p>कुल दान</p>
+        </div>
+        <div class="stat-box">
+            <h3 id="percentComplete">0%</h3>
+            <p>लक्ष्य पूर्ण</p>
+        </div>
+    </div>
+</section>
+
+<section class="donors-section">
+    <h2>🌟 हमारे महान दाताएं</h2>
+    <div id="donorsList" class="donors-list">
+        <p class="no-donors">अभी कोई दान नहीं हुआ। आप पहले दाता बन सकते हैं! 🙏</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <h2>📞 संपर्क करें</h2>
+    <div class="contact-info">
+        <p><strong>अभियान प्रभारी:</strong> Shubhank Garg</p>
+        <p><strong>📱 मोबाइल:</strong> <a href="tel:+916266109744">+91 6266109744</a></p>
+        <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/916266109744">+91 6266109744</a></p>
+        <p><strong>📧 Email:</strong> <a href="mailto:info@hanuman-mandir.org">info@hanuman-mandir.org</a></p>
+    </div>
+</section>
+
+<section class="about-section">
+    <h2>ℹ️ मंदिर के बारे में</h2>
+    <p>
+        यह महान श्री हनुमान मंदिर निर्माण परियोजना हमारी आस्था और भक्ति का प्रतीक है। 
+        आपका प्रत्येक दान इस पवित्र कार्य में योगदान देता है।
+    </p>
+    <p>
+        हनुमान जी के आशीर्वाद से हम इस भव्य मंदिर को वास्तविकता में परिणित करेंगे।
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 श्री हनुमान मंदिर निर्माण अभियान | Developed with ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
